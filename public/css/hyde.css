@@ -54,10 +54,23 @@ html {
  */
 
 .sidebar {
+  overflow-y: scroll;
   text-align: center;
   padding: 2rem 1rem;
   color: rgba(255,255,255,.5);
-  background-color: #202020;
+  background-color: #f05525;
+  border-right: solid;
+  border-right-color: #fff;
+  border-right-width: thick;
+  background-image: url(/public/images/gary-edited-bw-2.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+
+  -webkit-text-size-adjust: 100%;
+      -ms-text-size-adjust: 100%;
+
 }
 @media (min-width: 48em) {
   .sidebar {
@@ -69,7 +82,20 @@ html {
     text-align: left;
   }
 }
-
+nav[data-toggle="toc"] .nav > li > a {
+    display:block;
+    padding:4px 20px;
+    font-size:13px;
+    font-weight:500;
+    color:#fefefe;
+}
+nav[data-toggle="toc"] .nav > .active:focus > a, nav[data-toggle="toc"] .nav > .active:hover > a, nav[data-toggle="toc"] .nav > .active > a {
+    padding-left:18px;
+    font-weight:700;
+    color: #2da3dc;
+    background-color:transparent;
+    border-left:2px solid #2da3dc;
+}
 /* Sidebar links */
 .sidebar a {
   color: #fff;
@@ -82,6 +108,12 @@ html {
   font-family: 'Slabo 27px', serif;
   font-size: 2.25rem;
 }
+
+.title {
+  font-family: 'Slabo 27px', serif;
+  font-size: 2.25rem;
+}
+
 
 /* Sidebar nav */
 .sidebar-nav {

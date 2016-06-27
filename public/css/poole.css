@@ -48,7 +48,7 @@ body {
 }
 
 html {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-size: 16px;
   line-height: 1.5;
 }
@@ -60,26 +60,15 @@ html {
 
 body {
   color: #fefefe;
-  background-color: #fff;
-  /* Location of the image */
-  background-image: url(/public/images/gjbg.jpg);
-
-  /* Background image is centered vertically and horizontally at all times */
+  background-color: #f05525;
+  /*background-image: url(/public/images/gary-edited-bw.jpg);
   background-position: center center;
-
-  /* Background image doesn't tile */
   background-repeat: no-repeat;
-
-  /* Background image is fixed in the viewport so that it doesn't move when
-     the content's height is greater than the image's height */
   background-attachment: fixed;
-
-  /* This is what makes the background image rescale based
-     on the container's size */
   background-size: cover;
 
   -webkit-text-size-adjust: 100%;
-      -ms-text-size-adjust: 100%;
+      -ms-text-size-adjust: 100%;*/
 }
 
 /* No `:visited` state is required by default (browsers will use `a`) */
@@ -108,6 +97,7 @@ h1 {
   font-size: 2rem;
   text-shadow: 0px 0px 8px rgba(0, 0, 0, 1);
   color: #fefefe;
+  font-family: 'Slabo 27px', serif;
 }
 h2 {
   margin-top: 1rem;
@@ -137,6 +127,7 @@ strong {
 ul, ol, dl {
   margin-top: 0;
   margin-bottom: 1rem;
+  list-style-type: none;
 }
 
 dt {
@@ -351,6 +342,7 @@ tbody tr:nth-child(odd) th {
 .page,
 .post {
   margin-bottom: 4em;
+  line-height: 1.4;
 }
 
 /* Blog post or page title */
