@@ -67,6 +67,9 @@ html {
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
 
   -webkit-text-size-adjust: 100%;
       -ms-text-size-adjust: 100%;
